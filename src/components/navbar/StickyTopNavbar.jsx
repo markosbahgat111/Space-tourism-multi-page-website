@@ -22,7 +22,7 @@ const StickyTopNavbar = () => {
 		<nav className="navbar">
 			<div className="content">
 				<div className="logo">
-					<NavLink to="/home">
+					<NavLink to="/">
 						<img src={logo} alt="logo" />
 					</NavLink>
 				</div>
@@ -32,7 +32,7 @@ const StickyTopNavbar = () => {
 					</div>
 
 					<li onClick={handleShowNavbar}>
-						<NavLink to="/home" className={({ isActive }) => (isActive ? "active" : undefined)}>
+						<NavLink to="/" className={({ isActive }) => (isActive ? "active" : undefined)}>
 							00 Home
 						</NavLink>
 					</li>

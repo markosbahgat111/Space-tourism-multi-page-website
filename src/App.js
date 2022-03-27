@@ -33,7 +33,7 @@ function App() {
 					<Route path="Launchvehicle" element={<LaunchVehicle data={data.technology[0]} />} />
 				</Route>
 
-				<Route path="/home" element={<HOME />} exact />
+				<Route path="/" element={<HOME />} exact />
 
 				<Route path="/destination" element={<DESTINATION />}>
 					<Route path="moon" element={<MOON data={data.destinations[0]} />} />
