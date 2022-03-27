@@ -1,0 +1,235 @@
+@import "styles/constants.scss";
+
+.main_person_container {
+	padding-top: 90px;
+	.header_container {
+		width: 90%;
+		h3 {
+			text-align: right;
+			color: white;
+			font-family: $mainSecondHeader_font;
+			font-weight: 400;
+			letter-spacing: 5px;
+			font-size: 1.3rem;
+			text-transform: uppercase;
+			margin: 0em auto 2em auto;
+			span {
+				color: rgba(255, 255, 255, 0.25);
+			}
+		}
+	}
+	.person_img_container {
+		width: 90%;
+		margin: auto;
+		margin-top: 1em;
+		img {
+			object-fit: contain;
+			width: 50%;
+			height: auto;
+		}
+		hr {
+			margin-top: -3px;
+			border: none;
+			height: 2px;
+			background-color: #383848;
+		}
+	}
+	section .crew_content_container {
+		padding: 1em;
+		h1 {
+			font-size: 24px;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			font-weight: 400;
+			font-family: $mainTitle_font;
+			color: white;
+			padding: 0.4em 0 0.8em 0;
+		}
+		span {
+			color: rgba(255, 255, 255, 0.5);
+			font-family: $mainSecondHeader_font;
+			font-size: 20px;
+			letter-spacing: 5px;
+			text-transform: uppercase;
+		}
+		p {
+			color: $homePara_font_color;
+			font-family: $mainPara_font;
+			font-size: 0.9rem;
+			letter-spacing: 1px;
+			line-height: 25px;
+		}
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	.main_person_container {
+		position: relative;
+		width: 90%;
+		height: 100vh;
+		margin: auto !important;
+		padding-top: 0;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: flex-end;
+		text-align: center;
+		margin: 0;
+		.person_img_container {
+			width: 100%;
+			margin: 0;
+			img {
+				object-fit: cover;
+				width: 65%;
+				height: auto;
+			}
+			hr {
+				display: none;
+			}
+		}
+		section {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: space-between;
+			text-align: left;
+			height: 70vh;
+			margin: auto;
+			margin-top: 10em;
+			width: 100%;
+			.nav_cont {
+				order: 3;
+			}
+			.header_container {
+				order: 1;
+				h3 {
+					text-align: left;
+					color: white;
+					font-family: $mainSecondHeader_font;
+					font-weight: 400;
+					letter-spacing: 5px;
+					font-size: 1.4rem;
+					text-transform: uppercase;
+					margin: 0em auto 1em 1em;
+					span {
+						color: rgba(255, 255, 255, 0.25);
+					}
+				}
+			}
+
+			.crew_content_container {
+				width: 65%;
+				order: 2;
+				padding: 1em;
+				h1 {
+					font-size: 40px;
+					text-transform: uppercase;
+					letter-spacing: 3px;
+					font-weight: 400;
+					font-family: $mainTitle_font;
+					color: white;
+					padding: 0.4em 0 0.8em 0;
+					white-space: nowrap;
+				}
+				span {
+					color: rgba(255, 255, 255, 0.5);
+					font-family: $mainSecondHeader_font;
+					font-size: 20px;
+					letter-spacing: 5px;
+					text-transform: uppercase;
+				}
+				p {
+					color: $homePara_font_color;
+					font-family: $mainPara_font;
+					font-size: 0.9rem;
+					letter-spacing: 1px;
+					line-height: 25px;
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 765px) and (max-width: 1224px) {
+	.main_person_container {
+		position: relative;
+		width: 90%;
+		height: 100vh;
+		margin: auto !important;
+		display: flex;
+		flex-direction: column-reverse;
+		padding-top: 100px;
+		height: fit-content;
+		.header_container {
+			order: 1;
+			h3 {
+				text-align: left;
+				color: white;
+				font-family: $mainSecondHeader_font;
+				font-weight: 400;
+				letter-spacing: 5px;
+				font-size: 1.4rem;
+				text-transform: uppercase;
+				margin: 0;
+				span {
+					color: rgba(255, 255, 255, 0.25);
+				}
+			}
+		}
+		.person_img_container {
+			width: 100%;
+			margin: 1em auto;
+			img {
+				object-fit: cover;
+				width: 60%;
+				height: auto;
+			}
+			hr {
+				display: none;
+			}
+		}
+		section {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-start;
+			text-align: center;
+			height: 35vh;
+			margin: auto;
+			margin-top: 3em;
+			width: 100%;
+			.nav_cont {
+				order: 3;
+			}
+
+			.crew_content_container {
+				width: 80%;
+				order: 2;
+				padding: 0;
+				h1 {
+					font-size: 40px;
+					text-transform: uppercase;
+					letter-spacing: 3px;
+					font-weight: 400;
+					font-family: $mainTitle_font;
+					color: white;
+					padding: 0.4em 0 0.4em 0;
+					white-space: nowrap;
+				}
+				span {
+					color: rgba(255, 255, 255, 0.5);
+					font-family: $mainSecondHeader_font;
+					font-size: 20px;
+					letter-spacing: 5px;
+					text-transform: uppercase;
+				}
+				p {
+					color: $homePara_font_color;
+					font-family: $mainPara_font;
+					font-size: 1rem;
+					letter-spacing: 1px;
+					line-height: 25px;
+				}
+			}
+		}
+	}
+}
